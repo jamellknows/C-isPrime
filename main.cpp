@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 
+
 using namespace std;
 
 int convertToRiemann(int number){
@@ -17,12 +18,12 @@ int convertToRiemann(int number){
                 if(j == 0){
                      conv = conv * theta / 6;
                      if(floor(conv) == conv){
-                         return conv;
+                         cout << "The number converted is : " << conv << endl;
                      }
                 }else if(j == 1){
                     conv = conv * 5 * theta / 6;
                      if(floor(conv) == conv){
-                         return conv;
+                         cout << "The number converted is : " << conv << endl;
                      }
                 }
             }
@@ -38,18 +39,27 @@ int convertToRiemann(int number){
                 if(j == 0){
                      conv = conv * theta / 6;
                       if(floor(conv) == conv){
-                         return conv;
+                         cout << "The number converted is : " << conv << endl;
                      }
                 }else if(j == 1){
                     conv = conv * 5 * theta / 6;
                      if(floor(conv) == conv){
-                         return conv;
+                         cout << "The number converted is : " << conv << endl;
                      }
                 }
             }
         }
     }
-    cout << "The number converted is : " << conv << endl;
+    
+}
+
+void isInDist(int number)
+{
+
+    //write prime function 
+    //compare primes
+
+
 }
 
 
@@ -60,7 +70,7 @@ int main(){
     cout << "\n\n\t **** THE NUMBER MUST BE AN INTEGER OF COURSE ****" <<endl;
     int number;
     cin >> number;
-    convertToRiemann();
+    convertToRiemann(number);
 
    
 
