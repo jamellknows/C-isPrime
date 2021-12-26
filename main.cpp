@@ -15,6 +15,9 @@ int convertToRiemann(int number){
     int conv1 = number + 1;
     int conv2 = number - 1;
 
+    //for larger numbers I suggest writing a function that will make the iterations fewer 
+    
+
     for( int i = 0; i < number ; i++)
     {
         double y_1 = theta * (1 + 6 * i);
