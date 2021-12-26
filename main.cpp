@@ -19,6 +19,7 @@ int convertToRiemann(int number){
     string len = to_string(number);
     len.pop_back();
     length = stoi(len);
+    length = length/2;
 
 
 
