@@ -2,6 +2,7 @@
 #include <cmath>
 #include <algorithm>
 #include <vector>
+#include <string>
 
 //scaffolding fot prime finder will say multiples of 3 and 5 are prime
 using namespace std;
@@ -14,11 +15,16 @@ int convertToRiemann(int number){
     vector <long double> arr1;
     int conv1 = number + 1;
     int conv2 = number - 1;
+    int length; 
+    string len = to_string(number);
+    len.pop_back();
+    length = stoi(len);
 
-    //for larger numbers I suggest writing a function that will make the iterations fewer 
-    
 
-    for( int i = 0; i < number ; i++)
+
+
+
+    for( int i = 0; i < length ; i++)
     {
         double y_1 = theta * (1 + 6 * i);
         y_1 = sqrt(pow(y_1/theta, 2) - 0.25);
